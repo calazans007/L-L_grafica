@@ -8,7 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="text-white" style="background: url('imege/fundo.png') no-repeat center center fixed; background-size: cover;">
+<body class="text-white"
+    style="background: url('imege/fundo.png') no-repeat center center fixed; background-size: cover;">
 
 
     <!-- Cabeçalho -->
@@ -31,14 +32,21 @@
     </header>
 
     <!-- Hero -->
-    <section class="bg-cover bg-center text-center text-white py-32" style="background-image: url('banner-grafica.jpg');">
+    <section class="bg-cover bg-center text-center text-white py-32"
+        style="background-image: url('banner-grafica.jpg');">
         <h2 class="text-4xl font-bold mb-4">Impressões com Qualidade Profissional</h2>
         <p class="mb-6">Cartões, banners, panfletos e muito mais com rapidez e preço justo!</p>
-        <a href="#contato" class="bg-yellow-400 text-black px-6 py-3 rounded-full hover:bg-yellow-500 transition">Peça um Orçamento</a>
+        <a href="#contato" class="bg-yellow-400 text-black px-6 py-3 rounded-full hover:bg-yellow-500 transition">Peça
+            um Orçamento</a>
     </section>
 
     <!-- Serviços -->
-    <section id="servicos" class="max-w-6xl mx-auto py-20 bg-[#1a1a1a]">
+<section id="servicos" class="relative py-20 bg-cover bg-center" style="background-image: url('imege/parte\ traz\ cartão\ de\ visitas.png');">
+    <!-- Camada escura com opacidade -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Conteúdo -->
+    <div class="relative max-w-6xl mx-auto">
         <h3 class="text-3xl font-bold text-center mb-12 text-yellow-400">Nossos Serviços</h3>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white text-black p-6 rounded-xl shadow hover:shadow-lg">
@@ -54,31 +62,39 @@
                 <p>Material promocional com cores vivas e ótima impressão.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Portfólio -->
+    <!-- Produtos -->
     <section id="portfolio" class="bg-[#0f0f0f] py-20">
         <h3 class="text-3xl font-bold text-center mb-12 text-yellow-400">Nossos Produtos</h3>
 
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <img src="imege/204c8208-a5ef-445b-9069-81ffb7e2c3a2.jpg" alt="Trabalho 1" class="rounded-xl shadow hover:scale-105 transition-transform">
+        <div class="max-w-3xl mx-auto grid md:grid-cols-3 gap-8">
+            <img src="imege/204c8208-a5ef-445b-9069-81ffb7e2c3a2.jpg" alt="Trabalho 1"
+                class="rounded-xl shadow hover:scale-105 transition-transform">
 
-            <img src="imege/24a59e1d-ef39-4ade-a44f-097419c8529c.jpg" alt="Trabalho 2" class="rounded-xl shadow hover:scale-105 transition-transform">
+            <img src="imege/24a59e1d-ef39-4ade-a44f-097419c8529c.jpg" alt="Trabalho 2"
+                class="rounded-xl shadow hover:scale-105 transition-transform">
 
-            <img src="imege/4dbd43df-a07e-43b9-98ae-40a592d88ae9.jpg" alt="Trabalho 3" class="rounded-xl shadow hover:scale-105 transition-transform">
+            <img src="imege/4dbd43df-a07e-43b9-98ae-40a592d88ae9.jpg" alt="Trabalho 3"
+                class="rounded-xl shadow hover:scale-105 transition-transform">
 
-            <img src="imege/4e53aa6e-1bad-492c-9639-044ca0e4a87e.jpg" alt="Trabalho 3" class="rounded-xl shadow hover:scale-105 transition-transform">
+            <img src="imege/4e53aa6e-1bad-492c-9639-044ca0e4a87e.jpg" alt="Trabalho 3"
+                class="rounded-xl shadow hover:scale-105 transition-transform">
 
-            <img src="imege/64702715-29a9-4b97-8530-1db07f8d2e4b.jpg" alt="Trabalho 3" class="rounded-xl shadow hover:scale-105 transition-transform">
+            <img src="imege/64702715-29a9-4b97-8530-1db07f8d2e4b.jpg" alt="Trabalho 3"
+                class="rounded-xl shadow hover:scale-105 transition-transform">
 
-            <img src="imege/800257a8-a5ad-4a3b-820a-0e35e6fac1e4.jpg" alt="Trabalho 3" class="rounded-xl shadow hover:scale-105 transition-transform">
+            <img src="imege/800257a8-a5ad-4a3b-820a-0e35e6fac1e4.jpg" alt="Trabalho 3"
+                class="rounded-xl shadow hover:scale-105 transition-transform">
         </div>
     </section>
 
     <!-- Sobre -->
     <section id="sobre" class="max-w-4xl mx-auto py-20 text-center bg-[#1f1f1f]">
         <h3 class="text-3xl font-bold mb-6 text-yellow-400">Sobre Nós</h3>
-        <p class="text-lg">A L&L Gráfica atua há mais de 10 anos no mercado, oferecendo soluções gráficas com qualidade e rapidez. Nossa missão é transformar suas ideias em materiais impressos que impressionam!</p>
+        <p class="text-lg">A L&L Gráfica atua há mais de 10 anos no mercado, oferecendo soluções gráficas com qualidade
+            e rapidez. Nossa missão é transformar suas ideias em materiais impressos que impressionam!</p>
     </section>
 
     <!-- Contato -->
@@ -88,7 +104,9 @@
             <p class="mb-4">📞 (81) 9 8554-9300</p>
             <p class="mb-4">llcomunicape@gmail.com</p>
             <p class="mb-4">📍 Rua Antônio de Sá, n69 - Madalena - Recife-PE</p>
-            <a href="https://wa.me/5581985549300" target="_blank" class="bg-black text-yellow-400 px-6 py-3 rounded-full hover:bg-[#1a1a1a] transition">Chamar no WhatsApp</a>
+            <a href="https://wa.me/5581985549300" target="_blank"
+                class="bg-black text-yellow-400 px-6 py-3 rounded-full hover:bg-[#1a1a1a] transition">Chamar no
+                WhatsApp</a>
         </div>
     </section>
 
